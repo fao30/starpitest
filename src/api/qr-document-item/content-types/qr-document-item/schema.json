@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qr_document_items",
+  "info": {
+    "singularName": "qr-document-item",
+    "pluralName": "qr-document-items",
+    "displayName": "QrDocumentItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qrDocumentId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::qr-document.qr-document"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "paymentAgentByProductType": {
+      "type": "string",
+      "required": true
+    },
+    "paymentType": {
+      "type": "string"
+    },
+    "productType": {
+      "type": "string"
+    },
+    "providerInn": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "sum": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    }
+  }
+}

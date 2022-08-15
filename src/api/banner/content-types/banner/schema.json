@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banners",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "previewPicture": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company.company"
+    },
+    "promotionId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::promotion.promotion"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

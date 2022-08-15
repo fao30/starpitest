@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_tags",
+  "info": {
+    "singularName": "category-tag",
+    "pluralName": "category-tags",
+    "displayName": "categoryTags",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "categoryId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

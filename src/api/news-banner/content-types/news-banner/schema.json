@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_banners",
+  "info": {
+    "singularName": "news-banner",
+    "pluralName": "news-banners",
+    "displayName": "NewsBanners",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bannerId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::banner.banner"
+    }
+  }
+}

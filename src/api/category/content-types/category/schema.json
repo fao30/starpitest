@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "parentId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "previewPicture": {
+      "type": "string"
+    },
+    "active": {
+      "type": "integer"
+    }
+  }
+}

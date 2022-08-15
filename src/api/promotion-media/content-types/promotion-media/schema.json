@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotion_medias",
+  "info": {
+    "singularName": "promotion-media",
+    "pluralName": "promotion-medias",
+    "displayName": "PromotionMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promotionId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::promotion.promotion"
+    },
+    "mediaId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::media.media"
+    }
+  }
+}

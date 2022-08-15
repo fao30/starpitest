@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authentications",
+  "info": {
+    "singularName": "authentication",
+    "pluralName": "authentications",
+    "displayName": "Authentications",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    }
+  }
+}
